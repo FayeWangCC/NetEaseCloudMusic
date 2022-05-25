@@ -7,9 +7,9 @@ from selenium import webdriver
 # 歌曲API：http://music.163.com/song/media/outer/url?id=316686.mp3
 
 class DownLoadMusic(object):
-    def __init__(self):
+    def __init__(self, url):
         # 初始URL
-        self.url =
+        self.url = url
         pass
 
     def run(self):
