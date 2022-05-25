@@ -95,7 +95,6 @@ class DownLoadMusic(object):
 			album = music['album']
 			duration = music['duration']
 			url = music['url']
-
 			print('{0:^70}'.format('∨' * 70))
 			print('索引:{0:^70}'.format(index))
 			print('歌名:{0:^70}'.format(title))
@@ -111,10 +110,8 @@ class DownLoadMusic(object):
 		title = self.download_desc[index]['title']
 		url = self.download_desc[index]['url']
 		print(f'即将下载\t{name}的\t{title}')
-
 		# requests获取响应
 		response = requests.get(url=url, headers=self.headers, cookies=self.cookies)
-
 		# 构建保存路径
 		path = './' + self.name + '/'
 		# 判断路径是否存在
